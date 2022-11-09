@@ -1,0 +1,55 @@
+.team {
+      &--bground {
+            background-color: #F5F4FA;
+      }
+}
+
+.team-list {
+      column-gap: $gaps-small;
+}
+
+.team-list__cards {
+      width: 270px;
+
+      &--style {
+            background-color: $color-white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+      }
+}
+
+.member-about {
+      padding: $gaps-small 32px;
+}
+
+.member-about__names {
+      font-weight: 500;
+      font-size: $medium-text;
+      line-height: 1.18;
+      text-align: center;
+}
+
+.member-about__text {
+      font-size: $medium-text;
+      line-height: 1.18;
+      color: $color-gray;
+      text-align: center;
+
+      margin-top: 10px;
+}
+
+.member-about__socials {
+      margin-top: 16px;
+}
+
+.socials__link--team-design {
+      background-color: inherit;
+      color: #AFB1B8;
+      transition: color $duration $time-style, background-color $duration $time-style;
+
+      &:hover,
+      &:focus {
+            background-color: $zeema-blue;
+            color: $color-white;
+      }
+}

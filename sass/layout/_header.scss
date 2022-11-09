@@ -1,0 +1,131 @@
+.header {
+      border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+      display: flex;
+}
+
+.header-container__logo {
+      padding: 24px 0;
+      margin-right: 93px;
+}
+
+.logo {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+
+      &__accent {
+            color: $zeema-blue;
+      }
+
+      &--first-color {
+            color: #000000;
+      }
+}
+
+.menu {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+}
+
+.menu-pages {
+      column-gap: $gaps-medium;
+}
+
+.menu-pages__link {
+      padding: 32px 0;
+      font-weight: 500;
+
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+}
+
+.menu-pages__link--color {
+      color: inherit;
+      transition: color $duration $time-style;
+
+      &:hover,
+      &:focus {
+            color: $zeema-blue;
+      }
+}
+
+.menu-pages__link::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+
+      border-radius: 2px;
+      background-color: $zeema-blue;
+      transform: rotateY(-90deg);
+      transition: opacity $duration $time-style, transform $duration $time-style;
+      opacity: 0;
+
+      position: relative;
+      top: 31px;
+}
+
+.menu-pages__link:hover::after,
+.menu-pages__link:focus::after {
+      transform: rotateY(0deg);
+      opacity: 1;
+}
+
+.menu-pages__link.current {
+      color: $zeema-blue;
+}
+
+.menu-pages__link.current::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+
+      border-radius: 2px;
+      background-color: $zeema-blue;
+      opacity: 1;
+      transform: none;
+
+      position: relative;
+      top: 31px;
+}
+
+.header-container__hot-contacts {
+      margin-left: auto;
+}
+
+.hot-contacts {
+      align-items: center;
+      column-gap: $gaps-medium;
+}
+
+.hot-contacts__link {
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      padding: 32px 0;
+      display: flex;
+      align-items: center;
+
+
+}
+
+.hot-contacts__link--color {
+      color: $color-gray;
+      transition: color $duration $time-style;
+
+      &:hover,
+      &:focus {
+            color: $zeema-blue;
+            fill: $zeema-blue;
+      }
+}
+
+.hot-contacts__text {
+      margin-left: 10px;
+}

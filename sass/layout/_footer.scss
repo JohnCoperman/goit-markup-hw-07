@@ -1,0 +1,137 @@
+.footer {
+      padding: 60px 0;
+
+      &--bground {
+            background-color: $dark-theme;
+      }
+}
+
+.footer-container {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+}
+
+.logo--second-color {
+      color: $color-white;
+}
+
+.find-us__adress {
+      margin-top: 20px;
+}
+
+.footer-title {
+      line-height: 1.14;
+      text-transform: uppercase;
+
+      &--color {
+            color: $color-white;
+      }
+}
+
+.socials-container__footer-title {
+      margin-bottom: 20px;
+}
+
+.adress__list {
+      flex-direction: column;
+      row-gap: 9px;
+}
+
+.socials {
+      column-gap: 10px;
+}
+
+.socials__link {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.socials__link--design {
+      color: $color-white;
+      background-color: rgba(256, 256, 256, 0.1);
+      transition: background-color $duration $time-style;
+
+      &:hover,
+      &:focus {
+            background-color: $zeema-blue;
+            color: $color-white;
+      }
+}
+
+.adress__map {
+      font-style: normal;
+      color: $color-white;
+      line-height: 1.71;
+}
+
+.adress__link {
+      font-style: normal;
+      line-height: 1.71;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color $duration $time-style;
+
+      &:hover,
+      &:focus {
+            color: $zeema-blue;
+      }
+
+}
+
+.subscribe-form {
+      width: 570px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 12px;
+}
+
+.subscribe-form__email {
+      width: 358px;
+      padding: 15px 16px;
+      line-height: 1.25;
+
+      &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: $medium-text;
+      }
+}
+
+.subscribe-form__email--design {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      outline: transparent;
+      background-color: transparent;
+      color: $color-white;
+      transition: border $duration $time-style;
+
+      &:focus {
+            border: 1px solid $zeema-blue;
+      }
+}
+
+.subscribe-form-btn {
+      @extend %btn;
+      @extend %master-btn;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+
+      width: 200px;
+}
+
+.subscribe-form-btn--design {
+      @extend %master-btn--design;
+
+      &:hover,
+      &:focus {
+            @extend %btn--event;
+            background-color: #188CE8;
+      }
+}

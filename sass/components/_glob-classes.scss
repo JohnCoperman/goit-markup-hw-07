@@ -1,0 +1,30 @@
+.section {
+      padding: 94px 0;
+      margin: auto;
+      background-repeat: no-repeat;
+      max-width: 1600px;
+}
+
+.section-title {
+      font-size: 36px;
+      line-height: 1.66;
+      text-align: center;
+      margin-bottom: $gaps-medium;
+}
+
+.container {
+      width: 1200px;
+      padding: 0 15px;
+      margin: auto;
+}
+
+.icon-color {
+      fill: currentColor;
+}
+
+.master-btn__text {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      font-size: $medium-text;
+      line-height: 1.88;
+}

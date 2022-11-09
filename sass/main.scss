@@ -1,0 +1,19 @@
+@import 'utils/variables';
+@import 'utils/placeholders';
+@import 'utils/special-classes';
+
+@import 'base/common';
+@import 'base/reset';
+
+@import 'components/backdrop';
+@import 'components/glob-classes';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/hero';
+@import 'layout/features';
+@import 'layout/work';
+@import 'layout/team';
+@import 'layout/clients';
+
+@import 'components/pages/portfolio/portfolio-main';
